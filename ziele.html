@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="Fotos/Logo.svg">
+    <title>Ziele & Satzung – Die Regionale Jugend</title>
+    <style>
+        :root {
+            --primary: #8b2626;
+            --accent: #333333;
+            --highlight: #c59b27;
+            --bg: #ffffff;
+            --panel-bg: #ffffff;
+            --text: #222222;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+        header {
+            background-color: var(--primary);
+            color: #ffffff;
+            padding: 2.5rem 1rem;
+            text-align: center;
+            border-bottom: 3px solid var(--accent);
+        }
+        header h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+            margin-bottom: 0.3rem;
+        }
+        header p {
+            color: #f0f0f0;
+            font-size: 0.95rem;
+        }
+        .badge {
+            display: inline-block;
+            background-color: var(--accent);
+            color: #ffffff;
+            padding: 0.25rem 0.7rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-radius: 3px;
+            margin-top: 0.8rem;
+        }
+        nav {
+            background-color: var(--panel-bg);
+            display: flex;
+            justify-content: center;
+            border-bottom: 1px solid #e0e0e0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: var(--text);
+            text-decoration: none;
+            padding: 0.9rem 1.5rem;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: color 0.2s, background 0.2s;
+        }
+        nav a:hover, nav a.active {
+            color: var(--primary);
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2.5rem auto;
+            padding: 0 1rem;
+        }
+        section {
+            background: var(--panel-bg);
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            border-radius: 6px;
+            border: 1px solid #e5e5e5;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+        h2 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            font-weight: 600;
+            letter-spacing: -0.3px;
+        }
+        h3 {
+            color: var(--accent);
+            margin: 1.5rem 0 0.5rem 0;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        p {
+            margin-bottom: 1rem;
+            color: #444444;
+        }
+        ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        li {
+            margin-bottom: 0.4rem;
+            color: #444444;
+        }
+        .infobox {
+            background-color: #fdfdfd;
+            padding: 1.2rem;
+            border-left: 3px solid var(--highlight);
+            border-radius: 0 4px 4px 0;
+            margin-top: 1.5rem;
+            font-size: 0.9rem;
+            border-top: 1px solid #eeeeee;
+            border-right: 1px solid #eeeeee;
+            border-bottom: 1px solid #eeeeee;
+        }
+        footer {
+            background-color: var(--panel-bg);
+            color: #777777;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            font-size: 0.85rem;
+            border-top: 1px solid #e0e0e0;
+        }
+        footer a {
+            color: var(--highlight);
+            text-decoration: none;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ziele & Satzung</h1>
+        <p>Wofür wir einstehen und welche Leitlinien unsere Arbeit bestimmen.</p>
+        <div class="badge">Programm & Leitlinien</div>
+    </header>
+
+    <nav>
+        <a href="index.html">Start</a>
+        <a href="ziele.html" class="active">Ziele & Satzung</a>
+        <a href="mitmachen.html">Mitmachen & Kontakt</a>
+    </nav>
+
+    <div class="container">
+        <section>
+            <h2>Kernziele unseres Programms</h2>
+            
+            <h3>1. Heimat & Region stärken</h3>
+            <p>Wir setzen uns für den Erhalt gewachsener Strukturen, regionaler Identität und die Förderung des lokalen Gemeinschaftsslebens ein. Unsere Region soll für junge Menschen lebenswert bleiben.</p>
+
+            <h3>2. Echte Mitsprache</h3>
+            <p>Jugendbeteiligung darf kein reines Alibi sein. Wir fordern echte, unkomplizierte Mitsprecherechte und Gehör für die Interessen der jungen Generation vor Ort.</p>
+
+            <h3>3. Pragmatismus vor Ideologie</h3>
+            <p>Wir stehen für eine lösungsorientierte Sachpolitik, die sich an den realen Problemen der Menschen orientiert und unideologische Wege beschreitet.</p>
+        </section>
+
+        <section>
+            <h2>Statut & Leitlinien</h2>
+            <p><strong>§ 1 Status:</strong> Die Initiative operiert als freie, ungebundene Jugendinitiative unter dem Namen <em>Die Regionale Jugend (n. e. V.)</em>, gegründet und geleitet von Matteo Neuman und F. W.</p>
+            <p><strong>§ 2 Rechtlicher Rahmen:</strong> Da die Initiatoren minderjährig sind, fungieren die Erziehungsberechtigten als rechtliche Begleitung und Ansprechpartner für offizielle und administrative Abläufe.</p>
+            
+            <div class="infobox">
+                <strong>Transparenzhinweis:</strong> Unsere Arbeit basiert auf einem offenen, demokratischen Miteinander und dem Grundsatz des friedlichen und konstruktiven Dialogs.
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Die Regionale Jugend (n. e. V.) – Gegründet von Matteo Neuman & F. W. <br>Kontakt: <a href="mailto:DieReJu@proton.me">DieReJu@proton.me</a></p>
+    </footer>
+</body>
+</html>
