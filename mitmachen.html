@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/svg+xml" href="Fotos/Logo.svg">
-    <title>Mitmachen & Kontakt – Die Regionale Jugend</title>
+    <link rel="icon" type="image/jpeg" href="Fotos/Logo.jpg">
+    <title>Mitmachen & Kontakt – DiReJu</title>
+    
     <style>
         :root {
             --primary: #8b2626;
@@ -14,17 +15,20 @@
             --panel-bg: #ffffff;
             --text: #222222;
         }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
         }
+
         body {
             background-color: var(--bg);
             color: var(--text);
             line-height: 1.7;
         }
+
         header {
             background-color: var(--primary);
             color: #ffffff;
@@ -32,16 +36,19 @@
             text-align: center;
             border-bottom: 3px solid var(--accent);
         }
+
         header h1 {
             font-size: 2rem;
             font-weight: 600;
             letter-spacing: -0.5px;
             margin-bottom: 0.3rem;
         }
+
         header p {
             color: #f0f0f0;
             font-size: 0.95rem;
         }
+
         .badge {
             display: inline-block;
             background-color: var(--accent);
@@ -54,6 +61,7 @@
             border-radius: 3px;
             margin-top: 0.8rem;
         }
+
         nav {
             background-color: var(--panel-bg);
             display: flex;
@@ -63,6 +71,7 @@
             top: 0;
             z-index: 1000;
         }
+
         nav a {
             color: var(--text);
             text-decoration: none;
@@ -71,15 +80,18 @@
             font-size: 0.9rem;
             transition: color 0.2s, background 0.2s;
         }
+
         nav a:hover, nav a.active {
             color: var(--primary);
             background-color: #f9f9f9;
         }
+
         .container {
             max-width: 800px;
             margin: 2.5rem auto;
             padding: 0 1rem;
         }
+
         section {
             background: var(--panel-bg);
             padding: 2.5rem;
@@ -88,6 +100,7 @@
             border: 1px solid #e5e5e5;
             box-shadow: 0 2px 4px rgba(0,0,0,0.02);
         }
+
         h2 {
             color: var(--primary);
             margin-bottom: 1rem;
@@ -95,16 +108,19 @@
             font-weight: 600;
             letter-spacing: -0.3px;
         }
+
         h3 {
             color: var(--accent);
             margin: 1.5rem 0 0.5rem 0;
             font-size: 1.1rem;
             font-weight: 600;
         }
+
         p {
             margin-bottom: 1rem;
             color: #444444;
         }
+
         .btn {
             display: inline-block;
             background-color: var(--primary);
@@ -115,11 +131,31 @@
             font-size: 0.9rem;
             border-radius: 4px;
             margin-top: 0.5rem;
+            margin-right: 0.5rem;
             transition: background 0.2s;
         }
+
         .btn:hover {
             background-color: #6f1c1c;
         }
+
+        .btn-secondary {
+            display: inline-block;
+            background-color: var(--accent);
+            color: #ffffff;
+            padding: 0.7rem 1.4rem;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            border-radius: 4px;
+            margin-top: 0.5rem;
+            transition: background 0.2s;
+        }
+
+        .btn-secondary:hover {
+            background-color: #222222;
+        }
+
         .btn-discord {
             display: inline-block;
             background-color: #5865F2;
@@ -131,9 +167,11 @@
             border-radius: 4px;
             transition: background 0.2s;
         }
+
         .btn-discord:hover {
             background-color: #4752C4;
         }
+
         .contact-box {
             background-color: #fdfdfd;
             padding: 1.5rem;
@@ -141,6 +179,7 @@
             border: 1px solid #e0e0e0;
             margin-top: 1rem;
         }
+
         footer {
             background-color: var(--panel-bg);
             color: #777777;
@@ -150,6 +189,7 @@
             font-size: 0.85rem;
             border-top: 1px solid #e0e0e0;
         }
+
         footer a {
             color: var(--highlight);
             text-decoration: none;
@@ -158,6 +198,7 @@
     </style>
 </head>
 <body>
+
     <header>
         <h1>Mitmachen & Kontakt</h1>
         <p>Werde Teil unserer Initiative oder nimm direkten Kontakt mit uns auf.</p>
@@ -174,7 +215,9 @@
         <section>
             <h2>Teil der Initiative werden</h2>
             <p>Du teilst unsere Werte, möchtest dich für deine Heimat einsetzen oder hast eigene Ideen, die du einbringen willst? Wir freuen uns über jede Unterstützung von Gleichgesinnten.</p>
-            <p>Schreib uns einfach eine E-Mail, um dich vorzustellen oder mehr über unsere Arbeit zu erfahren.</p>
+            <p>Lade dir einfach unser Bewerbungsformular herunter, fülle es aus und schicke es im Anhang deiner E-Mail mit oder gib es persönlich bei uns ab!</p>
+            
+            <a href="Fotos/Mitglidsbewerbung-DiReJu.pdf" target="_blank" class="btn-secondary">📄 Bewerbungsformular (PDF)</a>
             <a href="mailto:DieReJu@proton.me" class="btn">E-Mail an uns schreiben</a>
         </section>
 
@@ -212,5 +255,6 @@
     <footer>
         <p>&copy; 2026 Die Regionale Jugend (n. e. V.) – Gegründet von Matteo Neuman & F. W. <br>Kontakt: <a href="mailto:DieReJu@proton.me">DieReJu@proton.me</a></p>
     </footer>
+
 </body>
 </html>
