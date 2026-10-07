@@ -143,6 +143,30 @@
             border-bottom: 1px solid #eeeeee;
         }
 
+        /* Styling für die Mitgliederliste (Tabelle) */
+        .member-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            font-size: 0.95rem;
+        }
+
+        .member-table th, .member-table td {
+            padding: 0.8rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .member-table th {
+            background-color: #f9f9f9;
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        .member-table tr:hover {
+            background-color: #fdfdfd;
+        }
+
         footer {
             background-color: var(--panel-bg);
             color: #777777;
@@ -186,16 +210,53 @@
 
             <h3>3. Pragmatismus vor Ideologie</h3>
             <p>Wir stehen für eine lösungsorientierte Sachpolitik, die sich an den realen Problemen der Menschen orientiert und unideologische Wege beschreitet.</p>
+
+            <h3>4. Kulturelle Erhaltung</h3>
+            <p>Wir setzen uns für die Bewahrung und Förderung regionaler Kultur, lokaler Traditionen, des Brauchtums und gewachsener Dorfgemeinschaften ein, damit das kulturelle Erbe auch für kommende Generationen lebendig bleibt.</p>
         </section>
 
         <section>
             <h2>Statut & Leitlinien</h2>
-            <p><strong>§ 1 Status:</strong> Die Initiative operiert als freie, ungebundene Jugendinitiative unter dem Namen <em>Die Regionale Jugend (n. e. V.)</em>, gegründet und geleitet von Matteo Neuman und F. W.</p>
+            <p><strong>§ 1 Status:</strong> Die Initiative operiert als informelle Jugendpartei und ungebundener Zusammenschluss unter dem Namen <em>Die Regionale Jugend (n. e. V.)</em>, gegründet und geleitet von Matteo Neuman und F. W.</p>
             <p><strong>§ 2 Rechtlicher Rahmen:</strong> Da die Initiatoren minderjährig sind, fungieren die Erziehungsberechtigten als rechtliche Begleitung und Ansprechpartner für offizielle und administrative Abläufe.</p>
+            <p><strong>§ 3 Ausrichtung:</strong> Die Organisation versteht sich als informelle, regionale Jugendpartei (n. e. V.), die die politischen Interessen der Jugend basisnah vor Ort vertritt.</p>
             
             <div class="infobox">
                 <strong>Transparenzhinweis:</strong> Unsere Arbeit basiert auf einem offenen, demokratischen Miteinander und dem Grundsatz des friedlichen und konstruktiven Dialogs.
             </div>
+        </section>
+
+        <!-- Mitgliederliste -->
+        <section>
+            <h2>Mitglieder & Team</h2>
+            <p>Eine Übersicht der aktuellen Initiatoren und Mitglieder der regionalen Jugendpartei.</p>
+            
+            <table class="member-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Geburtsjahr</th>
+                        <th>Position</th>
+                    </tr>
+                <tbody>
+                    <tr>
+                        <td>Matteo Neuman</td>
+                        <td>2011</td>
+                        <td>Parteichef</td>
+                    </tr>
+                    <tr>
+                        <td>Fabian Wolf</td>
+                        <td>2010</td>
+                        <td>Pateirads Mitglied</td>
+                    </tr>
+                     <tr>
+                        <td>Lyonel Wend</td>
+                        <td>2011</td>
+                        <td>Patei Mitglied</td>
+                    </tr>
+                    <!-- Weitere Mitglieder können hier nach demselben Schema ergänzt werden -->
+                </tbody>
+            </table>
         </section>
     </div>
 
@@ -204,4 +265,4 @@
     </footer>
 
 </body>
-</html>
+</html>  
