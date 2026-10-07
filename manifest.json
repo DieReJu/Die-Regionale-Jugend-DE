@@ -1,0 +1,21 @@
+{
+  "name": "Die Regionale Jugend",
+  "short_name": "DiReJu",
+  "description": "Die informelle regionale Jugendpartei für Heimat, Kultur, Mitsprache und Pragmatismus.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#8b2626",
+  "icons": [
+    {
+      "src": "Fotos/Logo.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "Fotos/Logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
