@@ -4,51 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/jpeg" href="Fotos/Logo.jpg">
-    
-    <!-- Web-App Manifest & Meta-Tags -->
-    <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#8b2626">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
     <title>Startseite – DiReJu</title>
-        <style>
+    
+    <style>
         :root {
-            --primary: #8b2626;
+            --primary: #1f3a60;
             --accent: #333333;
             --highlight: #c59b27;
             --bg: #ffffff;
             --panel-bg: #ffffff;
             --text: #222222;
         }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
         }
+
         body {
             background-color: var(--bg);
             color: var(--text);
             line-height: 1.7;
         }
+
         header {
-            background-color: var(--primary);
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://dam.destination.one/2378982/aa19e35014ee888f86a851e10c1e41bb393cc346386b44a1bca8cac8fe82094d/platz-am-sande-in-l-neburg.jpg');
+            background-size: cover;
+            background-position: center;
             color: #ffffff;
-            padding: 2.5rem 1rem;
+            padding: 4rem 1rem;
             text-align: center;
             border-bottom: 3px solid var(--accent);
+            text-shadow: 0 2px 4px rgba(0,0,0,0.6);
         }
+
         header h1 {
-            font-size: 2rem;
-            font-weight: 600;
+            font-size: 2.2rem;
+            font-weight: 700;
             letter-spacing: -0.5px;
             margin-bottom: 0.3rem;
         }
+
         header p {
             color: #f0f0f0;
-            font-size: 0.95rem;
+            font-size: 1rem;
         }
+
         .badge {
             display: inline-block;
             background-color: var(--accent);
@@ -60,7 +63,9 @@
             letter-spacing: 0.5px;
             border-radius: 3px;
             margin-top: 0.8rem;
+            text-shadow: none;
         }
+
         nav {
             background-color: var(--panel-bg);
             display: flex;
@@ -70,6 +75,7 @@
             top: 0;
             z-index: 1000;
         }
+
         nav a {
             color: var(--text);
             text-decoration: none;
@@ -78,15 +84,18 @@
             font-size: 0.9rem;
             transition: color 0.2s, background 0.2s;
         }
+
         nav a:hover, nav a.active {
             color: var(--primary);
             background-color: #f9f9f9;
         }
+
         .container {
             max-width: 800px;
             margin: 2.5rem auto;
             padding: 0 1rem;
         }
+
         section {
             background: var(--panel-bg);
             padding: 2.5rem;
@@ -95,6 +104,7 @@
             border: 1px solid #e5e5e5;
             box-shadow: 0 2px 4px rgba(0,0,0,0.02);
         }
+
         h2 {
             color: var(--primary);
             margin-bottom: 1rem;
@@ -102,31 +112,39 @@
             font-weight: 600;
             letter-spacing: -0.3px;
         }
+
         h3 {
             color: var(--accent);
             margin: 1.5rem 0 0.5rem 0;
             font-size: 1.1rem;
             font-weight: 600;
         }
+
         p {
             margin-bottom: 1rem;
             color: #444444;
         }
+
         ul {
             margin-left: 1.5rem;
             margin-bottom: 1rem;
         }
+
         li {
             margin-bottom: 0.4rem;
             color: #444444;
         }
+
         .hero-img {
             width: 100%;
             height: 280px;
             object-fit: cover;
             border-radius: 4px;
             margin-bottom: 1.5rem;
+            filter: none;
+            opacity: 1;
         }
+
         .infobox {
             background-color: #fdfdfd;
             padding: 1.2rem;
@@ -138,6 +156,7 @@
             border-right: 1px solid #eeeeee;
             border-bottom: 1px solid #eeeeee;
         }
+
         .btn {
             display: inline-block;
             background-color: var(--primary);
@@ -150,9 +169,34 @@
             margin-top: 0.5rem;
             transition: background 0.2s;
         }
+
         .btn:hover {
-            background-color: #6f1c1c;
+            background-color: #152742;
         }
+
+        .member-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            font-size: 0.95rem;
+        }
+
+        .member-table th, .member-table td {
+            padding: 0.8rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .member-table th {
+            background-color: #f9f9f9;
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        .member-table tr:hover {
+            background-color: #fdfdfd;
+        }
+
         footer {
             background-color: var(--panel-bg);
             color: #777777;
@@ -162,6 +206,7 @@
             font-size: 0.85rem;
             border-top: 1px solid #e0e0e0;
         }
+
         footer a {
             color: var(--highlight);
             text-decoration: none;
@@ -170,40 +215,70 @@
     </style>
 </head>
 <body>
+
     <header>
         <h1>DiReJu</h1>
-        <p>Mut zur Wahrheit &bull; Für unsere Region und Heimat</p>
+        <p>Bürgernah, heimatverbunden & zukunftsorientiert</p>
         <div class="badge">Informelle Jugendpartei</div>
     </header>
-    
+
     <nav>
         <a href="index.html" class="active">Start</a>
         <a href="ziele.html">Ziele & Satzung</a>
         <a href="mitmachen.html">Mitmachen & Kontakt</a>
     </nav>
-    
+
     <div class="container">
         <section>
             <h2>Wer wir sind & Wofür wir stehen</h2>
             <img src="Fotos/banner.jpg" alt="Jugendpartei" class="hero-img">
-            <p>Wir – <strong>Matteo Neuman</strong> und <strong>F. W.</strong> – stehen als engagierte Jugendliche für eine heimatverbundene, bürgernahe Politik. Während bestehende Strukturen oft den direkten Draht zur jungen Generation vermissen lassen, möchten wir selbst aktiv werden und Verantwortung übernehmen. Wir haben diese Jugendpartei ins Leben gerufen, weil wir uns eine Politik wünschen, die die Zukunft unserer Gesellschaft stärkt und reale Zukunftsfragen lösungsorientiert anpackt.</p>
-            <p>Als informelle Jugendpartei organisieren wir uns gemeinsam, um uns Gehör zu verschaffen, zu diskutieren und uns konstruktiv für unsere Region einzusetzen. Wir stehen für einen aktiven Austausch, gesellschaftliche Mitbestimmung und gemeinschaftlichen Zusammenhalt.</p>
-                        
+            <p>Wir stehen als engagierte Jugendliche für eine bürgernahe, konservative und heimatverbundene Politik. Da etablierte Strukturen oft den direkten Draht zur jungen Generation vermissen lassen, möchten wir selbst Verantwortung übernehmen. Wir haben diese Jugendpartei gegründet, um eine realistische Sachpolitik zu gestalten, die unsere gewachsenen Werte schützt und Zukunftsthemen lösungsorientiert anpackt.</p>
+            <p>Als informelle Jugendpartei organisieren wir uns gemeinsam, um uns Gehör zu verschaffen, zu diskutieren und uns konstruktiv für unsere Region und Heimat einzusetzen. Wir stehen für einen echten Dialog und gemeinschaftlichen Zusammenhalt.</p>
+            
             <div class="infobox">
-                <strong>💡 Rechtlicher Hinweis:</strong> Da wir uns im Aufbau befinden und minderjährig sind, erfolgt dieser Auftritt in enger Absprache, Kooperation und unter Verantwortung unserer Erziehungsberechtigten, um organisatorisch einen sauberen Weg zu gehen.
+                <strong>💡 Rechtlicher Hinweis:</strong> Da wir uns im Aufbau befinden und minderjährig sind, erfolgt dieser Auftritt in Absprache und unter Verantwortung unserer Erziehungsberechtigten, um einen geordneten und sauberen Weg zu gehen.
             </div>
         </section>
-        
+
         <section>
             <h2>Unsere Vision für die Zukunft</h2>
-            <p>Deutschland und unsere lokalen Regionen brauchen frische Impulse und eine Politik, die die Anliegen der Bürger und der Jugend in den Mittelpunkt stellt. Wir wollen aufklären, vernetzen und eine Plattform für den Austausch bieten, die über den Schulalltag und gängige Medien hinausgeht.</p>
+            <p>Unsere Regionen und Deutschland brauchen frische Impulse und eine Politik, die die Interessen der Bürger und der Jugend in den Mittelpunkt stellt. Wir wollen aufklären, vernetzen und eine Plattform für den Austausch bieten, die nah am Alltag der Menschen ist.</p>
             <p>Klicke dich durch unsere Ziele oder werde direkt Teil unserer Jugendpartei!</p>
             <a href="mitmachen.html" class="btn">Jetzt mitmachen</a>
         </section>
+
+        <section>
+            <h2>Mitglieder & Team</h2>
+            <p>Eine Übersicht der aktuellen Mitglieder und des Teams unserer regionalen Jugendpartei.</p>
+            
+            <table class="member-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Interne Rolle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Matteo Neumann</td>
+                        <td>Parteichef</td>
+                    </tr>
+                    <tr>
+                        <td>Fabian Wolf</td>
+                        <td>Parteirat</td>
+                    </tr>
+                    <tr>
+                        <td>Lyonel Wend</td>
+                        <td>Mitglied</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
     </div>
-    
+
     <footer>
-        <p>&copy; 2026 Die Regionale Jugend (n. e. V.) – Gegründet von Matteo Neuman & F. W. <br>Kontakt: <a href="mailto:DieReJu@proton.me">DieReJu@proton.me</a></p>
+        <p>&copy; 2026 DiReJu – Die Regionale Jugend (n. e. V.) <br>Kontakt: <a href="mailto:DieReJu@proton.me">DieReJu@proton.me</a></p>
     </footer>
+
 </body>
 </html>
