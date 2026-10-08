@@ -8,7 +8,7 @@
     
     <style>
         :root {
-            --primary: #8b2626;
+            --primary: #1f3a60;
             --accent: #333333;
             --highlight: #c59b27;
             --bg: #ffffff;
@@ -30,23 +30,26 @@
         }
 
         header {
-            background-color: var(--primary);
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://dam.destination.one/2378982/aa19e35014ee888f86a851e10c1e41bb393cc346386b44a1bca8cac8fe82094d/platz-am-sande-in-l-neburg.jpg');
+            background-size: cover;
+            background-position: center;
             color: #ffffff;
-            padding: 2.5rem 1rem;
+            padding: 4rem 1rem;
             text-align: center;
             border-bottom: 3px solid var(--accent);
+            text-shadow: 0 2px 4px rgba(0,0,0,0.6);
         }
 
         header h1 {
-            font-size: 2rem;
-            font-weight: 600;
+            font-size: 2.2rem;
+            font-weight: 700;
             letter-spacing: -0.5px;
             margin-bottom: 0.3rem;
         }
 
         header p {
             color: #f0f0f0;
-            font-size: 0.95rem;
+            font-size: 1rem;
         }
 
         .badge {
@@ -60,6 +63,7 @@
             letter-spacing: 0.5px;
             border-radius: 3px;
             margin-top: 0.8rem;
+            text-shadow: none;
         }
 
         nav {
@@ -109,13 +113,6 @@
             letter-spacing: -0.3px;
         }
 
-        h3 {
-            color: var(--accent);
-            margin: 1.5rem 0 0.5rem 0;
-            font-size: 1.1rem;
-            font-weight: 600;
-        }
-
         p {
             margin-bottom: 1rem;
             color: #444444;
@@ -130,54 +127,13 @@
             font-weight: 500;
             font-size: 0.9rem;
             border-radius: 4px;
-            margin-top: 0.5rem;
+            margin-top: 0.8rem;
             margin-right: 0.5rem;
             transition: background 0.2s;
         }
 
         .btn:hover {
-            background-color: #6f1c1c;
-        }
-
-        .btn-secondary {
-            display: inline-block;
-            background-color: var(--accent);
-            color: #ffffff;
-            padding: 0.7rem 1.4rem;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.9rem;
-            border-radius: 4px;
-            margin-top: 0.5rem;
-            transition: background 0.2s;
-        }
-
-        .btn-secondary:hover {
-            background-color: #222222;
-        }
-
-        .btn-discord {
-            display: inline-block;
-            background-color: #5865F2;
-            color: #ffffff;
-            padding: 0.7rem 1.4rem;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9rem;
-            border-radius: 4px;
-            transition: background 0.2s;
-        }
-
-        .btn-discord:hover {
-            background-color: #4752C4;
-        }
-
-        .contact-box {
-            background-color: #fdfdfd;
-            padding: 1.5rem;
-            border-radius: 4px;
-            border: 1px solid #e0e0e0;
-            margin-top: 1rem;
+            background-color: #152742;
         }
 
         footer {
@@ -191,7 +147,7 @@
         }
 
         footer a {
-            color: var(--highlight);
+            color: #c59b27;
             text-decoration: none;
             font-weight: 600;
         }
@@ -200,60 +156,49 @@
 <body>
 
     <header>
-        <h1>Mitmachen & Kontakt</h1>
-        <p>Werde Teil unserer Jugend Partei oder nimm direkten Kontakt mit uns auf.</p>
-        <div class="badge">Gemeinsam stark</div>
+        <h1>Mitmachen & Kontakt – DiReJu</h1>
+        <p>Werde Teil unserer Bewegung für die Region.</p>
+        <div class="badge">Mitgliedschaft & Kontakt</div>
     </header>
-    
+
     <nav>
         <a href="index.html">Start</a>
         <a href="ziele.html">Ziele & Satzung</a>
         <a href="mitmachen.html" class="active">Mitmachen & Kontakt</a>
     </nav>
-    
+
     <div class="container">
         <section>
-            <h2>Teil der Jugend Partei werden</h2>
-            <p>Du teilst unsere Werte, möchtest dich für deine Heimat einsetzen oder hast eigene Ideen, die du einbringen willst? Wir freuen uns über jede Unterstützung von Gleichgesinnten.</p>
-            <p>Lade dir einfach unser Bewerbungsformular herunter, fülle es aus und schicke es im Anhang deiner E-Mail mit oder gib es persönlich bei uns ab!</p>
-            
-            <a href="Fotos/Mitglidsbewerbung-DiReJu.pdf" target="_blank" class="btn-secondary">📄 Bewerbungsformular (PDF)</a>
-            <a href="mailto:DieReJu@proton.me" class="btn">E-Mail an uns schreiben</a>
+            <h2>Mitgliedsantrag & Bewerbung</h2>
+            <p>Du möchtest Teil von DiReJu werden und dich für unsere Region einsetzen? Lade dir unseren Aufnahmeantrag herunter, fülle ihn aus und sende deine Bewerbung direkt per E-Mail an uns.</p>
+            <p><strong>E-Mail für Bewerbungen:</strong> <a href="mailto:DieReJu@proton.me">DieReJu@proton.me</a></p>
+            <div>
+                <a href="Fotos/Mitglidsbewerbung-DiReJu.pdf" class="btn" target="_blank">📄 PDF-Bewerbung herunterladen</a>
+            </div>
         </section>
 
         <section>
             <h2>Discord-Community</h2>
-            <p>Tausche dich direkt mit anderen aus, diskutiere Ideen und sei bei kommenden Aktionen hautnah dabei.</p>
-            <a href="https://discord.gg/WZAzgr7hbA" target="_blank" class="btn-discord">Discord-Server beitreten</a>
+            <p>Tausche dich direkt mit uns und anderen Gleichgesinnten aus der Umgebung aus. Komm auf unseren offiziellen Discord-Server!</p>
+            <a href="https://discord.gg/DEINEN-DISCORD-LINK" class="btn" target="_blank">💬 Dem Discord-Server beitreten</a>
         </section>
-        
+
         <section>
-            <h2>Impressum & Kontakt</h2>
-            
-            <h3>Angaben gemäß § 5 DDG:</h3>
+            <h2>Impressum</h2>
+            <p><strong>Angaben gemäß § 5 TDDDG / Informeller Status:</strong></p>
             <p>
-                <strong>Verantwortlich für den Inhalt (Erziehungsberechtigte):</strong><br>
-                Rita Groß-Neumann<br>
-                Musterweg 12<br>
-                21335 Lüneburg
+                <strong>DiReJu – Die Regionale Jugend (n. e. V.)</strong><br>
+                Vertreten durch das Gründerteam<br>
+                Kirchgellersen, Niedersachsen<br>
+                E-Mail: <a href="mailto:DieReJu@proton.me">DieReJu@proton.me</a>
             </p>
-            
-            <h3 style="margin-top: 1.2rem;">Initiatoren & Inhaltliche Leitung:</h3>
-            <p>Matteo Neuman & F. W.</p>
-            
-            <div class="contact-box">
-                <p><strong>Elektronischer Kontakt:</strong><br>
-                E-Mail: <a href="mailto:DieReJu@proton.me" style="color: var(--primary); font-weight: 600;">DieReJu@proton.me</a></p>
-            </div>
-            
-            <p style="margin-top: 1.5rem; font-size: 0.9rem; color: #666;">
-                <em>Hinweis:</em> Da es sich hierbei um eine freie Jugendinitiative (n. e. V.) Minderjähriger im Aufbau handelt, erfolgt die organisatorische Begleitung über die jeweiligen Erziehungsberechtigten.
-            </p>
+            <p><strong>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV / Rechtlicher Hinweis:</strong><br>
+            Da sich die Initiatoren im Jugendalter befinden und minderjährig sind, erfolgt dieser Internetauftritt in enger Absprache, Kooperation und unter der vollen rechtlichen Verantwortung sowie Aufsicht der Erziehungsberechtigten.</p>
         </section>
     </div>
-    
+
     <footer>
-        <p>&copy; 2026 Die Regionale Jugend (n. e. V.) – Gegründet von Matteo Neuman & F. W. <br>Kontakt: <a href="mailto:DieReJu@proton.me">DieReJu@proton.me</a></p>
+        <p>&copy; 2026 DiReJu – Die Regionale Jugend (n. e. V.) <br>Kontakt: <a href="mailto:DieReJu@proton.me">DieReJu@proton.me</a></p>
     </footer>
 
 </body>
